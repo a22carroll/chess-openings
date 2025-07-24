@@ -5,6 +5,7 @@ from openings import openings
 def play_opening(opening_name, moves):
     print(f"Opening: {opening_name}")
     board = chess.Board()
+    
 
     for i, move_san in enumerate(moves, 1):
         move = board.parse_san(move_san)
